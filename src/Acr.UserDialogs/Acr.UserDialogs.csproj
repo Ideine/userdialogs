@@ -37,15 +37,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Acr.UserDialogs.Interface\Acr.UserDialogs.Interface.csproj">
-      <Project>{6a0ae941-711d-4c36-a311-960b65534b22}</Project>
-      <Name>Acr.UserDialogs.Interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\Splat.1.6.2\lib\Portable-net45+win+wpa81+wp80\Splat.dll</HintPath>
-      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -60,4 +53,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\Acr.UserDialogs.Interface\Acr.UserDialogs.Interface.csproj">
+      <Project>{6A0AE941-711D-4C36-A311-960B65534B22}</Project>
+      <Name>Acr.UserDialogs.Interface</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

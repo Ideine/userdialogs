@@ -36,34 +36,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\Xamarin.iOS10\Cirrious.CrossCore.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.CrossCore.Touch, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\Xamarin.iOS10\Cirrious.CrossCore.Touch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\Xamarin.iOS10\Cirrious.MvvmCross.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\Xamarin.iOS10\Cirrious.MvvmCross.Binding.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Binding.Touch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\Xamarin.iOS10\Cirrious.MvvmCross.Binding.Touch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Localization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1\lib\Xamarin.iOS10\Cirrious.MvvmCross.Localization.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Cirrious.MvvmCross.Touch, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.HotTuna.MvvmCrossLibraries.3.5.1\lib\Xamarin.iOS10\Cirrious.MvvmCross.Touch.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -75,14 +47,42 @@
       <Name>Acr.MvvmCross.Plugins.UserDialogs</Name>
     </ProjectReference>
     <ProjectReference Include="..\Acr.UserDialogs.Interface\Acr.UserDialogs.Interface.csproj">
-      <Project>{6a0ae941-711d-4c36-a311-960b65534b22}</Project>
+      <Project>{6A0AE941-711D-4C36-A311-960B65534B22}</Project>
       <Name>Acr.UserDialogs.Interface</Name>
     </ProjectReference>
     <ProjectReference Include="..\Acr.UserDialogs.iOS\Acr.UserDialogs.iOS.csproj">
-      <Project>{dfa982a2-f6f7-4ffd-9f86-a1af11f7c4a1}</Project>
+      <Project>{DFA982A2-F6F7-4FFD-9F86-A1AF11F7C4A1}</Project>
       <Name>Acr.UserDialogs.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
+      <IsAppExtension>False</IsAppExtension>
+      <IsWatchApp>False</IsWatchApp>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
+      <Project>{CFF6F25A-3C3B-44EE-A54C-2ED4AAFF3ADB}</Project>
+      <Name>Cirrious.CrossCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\CrossCore\Cirrious.CrossCore.Touch\Cirrious.CrossCore.Touch.csproj">
+      <Project>{BBBCD850-E7CB-4B6C-86D9-CE01F2B1C81C}</Project>
+      <Name>Cirrious.CrossCore.Touch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\Cirrious\Cirrious.MvvmCross\Cirrious.MvvmCross.csproj">
+      <Project>{B6E27475-E7D0-448C-A5CC-5097DCA1E2DD}</Project>
+      <Name>Cirrious.MvvmCross</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\Cirrious\Cirrious.MvvmCross.Binding\Cirrious.MvvmCross.Binding.csproj">
+      <Project>{64DCD397-9019-41E8-A928-E5F5C5DF185B}</Project>
+      <Name>Cirrious.MvvmCross.Binding</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\Cirrious\Cirrious.MvvmCross.Binding.Touch\Cirrious.MvvmCross.Binding.Touch.csproj">
+      <Project>{913B13B5-7B2C-4DDA-BECB-DADC827ED895}</Project>
+      <Name>Cirrious.MvvmCross.Binding.Touch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\Cirrious\Cirrious.MvvmCross.Localization\Cirrious.MvvmCross.Localization.csproj">
+      <Project>{D89351C1-D48F-4AD0-A0B9-353A93425AB7}</Project>
+      <Name>Cirrious.MvvmCross.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MvvmCross\Cirrious\Cirrious.MvvmCross.Touch\Cirrious.MvvmCross.Touch.csproj">
+      <Project>{E042EDD9-E89D-4928-BF4D-27F0FC29CEDA}</Project>
+      <Name>Cirrious.MvvmCross.Touch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
